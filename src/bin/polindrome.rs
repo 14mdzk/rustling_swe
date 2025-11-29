@@ -4,6 +4,20 @@ struct PolindromeInput {
     value: String
 }
 
+/**
+* How to check Polindrome 
+* 1. Remove non-alphanumeric characters
+* 2. Convert to lowercase
+* 3. Here we use common pattern (from what I learned through searching and prompting)
+* - Instead of reversing the string, we use comparison between left and right
+* - where for each iteration we compare the current the words by character from left and right
+* - if they are not equal, we return false
+* - if they are equal, we add one to left and subtract one from right
+* - thus at the end, if we finish the iteration without finding any mismatch, we return true
+* 
+* tbh this concept is fascinating, need to grind more into software engineering things.
+*/
+
 fn is_polindrome(input: &PolindromeInput) -> bool {
     let cleaned: String = input.value
         .chars()
