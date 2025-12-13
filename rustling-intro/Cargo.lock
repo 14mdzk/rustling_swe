@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "rustling_swe"
+name = "rustling_intro"
 version = "0.1.0"
